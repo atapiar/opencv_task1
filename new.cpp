@@ -20,6 +20,10 @@ int main( int argc, char** argv )
     Mat src2 = imread( samples::findFile("logo-only1.png") );
     beta = ( 1.0 - alpha );
     addWeighted( src, alpha, src2, beta, 0.0, dst2);
+
+    Mat dst3;
+
+    subtract(src, src2, dst3, noArray(), -1);
     
 
     if (image.empty())
@@ -60,6 +64,8 @@ int main( int argc, char** argv )
     imshow( "Equalized Image", dst );
 
     imshow( "Linear Blend", dst2 );
+
+    imshow( "Linear Subtract", dst3 );
 
     waitKey(0); // Wait for any key stroke
 
