@@ -42,7 +42,7 @@ Luego ejecutar el archivo `Makefile` generado
 Y una vez ya ejecutado el archivo make este generara el archivo compilado _result_ y ejecutarlo
 
 ```
-    result
+    ./result
 ```
 
 Y luego, se debera mostrar las imagenes del resultado dependiendo del archivo que usted haya escogido.
