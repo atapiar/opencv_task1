@@ -1,0 +1,87 @@
+# Trabajo de Vision Artificial
+
+## Tabla de contenidos
+
+1. [Requisitos previos](#requisitos-previos)
+2. [Ejecucion]
+3. [Convolucion](#convolucion)
+4. [Main](#main)
+
+### <a name="requisitos-previos">Requisitos previos</a>
+
+### Para ejecutar necesita instalar CMake y OpenCV
+
+Haga click aqui para obtener los archivos necesarios [aqui](https://docs.opencv.org/4.x/d0/db2/tutorial_macos_install.html)
+
+1. Una vez instalado los programas necesarios, dirigase al archivo `CMakeLists.txt` en el cual se detalla en la linea 4 que archivo desea ejecutar
+
+```
+...
+add_executable(MyProject main.cpp)
+...
+```
+
+en esa linea usted debera colocar que archivo quiere ejecutar, `convolucion.cpp` o `main.cpp` en el cual se detalla a continuación el funcionamiento de cada uno:
+
+### <a name="ejecucion">Ejecucion</a>
+
+Para ejecutar los archivos debe correr los siguientes comandos
+
+Primero se necesita compilar el archivo declarado en el archivo `CMakeList.txt`
+
+```
+    cmake .
+```
+
+Luego ejecutar el archivo `Makefile` generado
+
+```
+    make
+```
+
+Y una vez ya ejecutado el archivo make este generara el archivo compilado _result_ y ejecutarlo
+
+```
+    result
+```
+
+Y luego, se debera mostrar las imagenes del resultado dependiendo del archivo que usted haya escogido.
+
+### <a name="convolucion">Convolucion</a>
+
+- En este archivo se demuestra el funcionamiento de procesamiento de la imagen para agregar un filtro en el cual el kernel recorre toda la imagen y modifica pixel por pixel aplicando el filtro usando convoluciones
+
+- **Resultados**
+
+### <a name="main">Main</a>
+
+Imagen Original
+![alt text](./results/convolucioncpp/Original%20Image.png)
+
+Convolucion
+![alt text](./results/convolucioncpp/Convolution.png)
+
+- En este archivo se utiliza una imagen base y en la cual se le agrega diferentes filtros (brillo, contraste, histograma, fusion con otra imagen)
+
+- **Resultados**
+
+Imagen Original
+![alt text](./results/maincpp/Original%20Image.png)
+
+Brillo incrementado al 100%
+![alt text](./results/maincpp/Brightness%20increased%20by%20100.png)
+
+Contraste Incrementado
+![alt text](./results/maincpp/Contrast%20Increased%20by%204.png)
+
+Equalizado
+![alt text](./results/maincpp/Equalized.png)
+
+Escala de Grises
+![alt text](./results/maincpp/Gray%20Scale.png)
+
+Linear Blend
+![alt text](./results/maincpp/Linear%20Blend.png)
+
+Linear Substract
+![alt text](./results/maincpp/Linear%20Substract.png)
