@@ -15,5 +15,6 @@ En este repositorio podras encontrar los ejercicios dejados que serian los sigui
 4. Convolución.
 5. Template Matching
 
-Para ello, los 4 primeros se ubican en la rama [V2](https://github.com/atapiar/opencv_task1/tree/V2), adicional a ello se trabajo utilizando la libreria OpenCV sin uso de la tarjeta grafica que se puede ubicar en la rama [openCv](https://github.com/atapiar/opencv_task1/tree/openCV)
+Para ello, los 4 primeros se ubican en la rama [ejercicio-imagenes](https://github.com/atapiar/opencv_task1/tree/ejercicio-imagenes), adicional a ello se trabajo utilizando la libreria OpenCV sin uso de la tarjeta grafica que se puede ubicar en la rama [openCv](https://github.com/atapiar/opencv_task1/tree/openCV)
+
 El ultimo ejercicio sobre el "_Template Matching_" se ubica en la rama [template-matching](https://github.com/atapiar/opencv_task1/tree/template-matching)
